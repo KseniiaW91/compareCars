@@ -1,0 +1,12 @@
+
+Feature: Shop and Compare cars
+
+Scenario: Select SUV and compare cars ensure the car is selected as expected
+Given user naviagates to url "https://www.carmax.com/"
+Then user clicks on "Search cars" button and verifies it's clickable
+Then user switches to compare field and verifies it moves to the right
+Then user verifies that compare filed is visible
+Then user select car to compare by clicking on the chekmark on the each car icon 
+The user verifies all 6 compare fields are filled in 
+And user clicks on "Go" button
+Then user verifies "2012 Volkswagen"  and "2014 Nissan" opened in the compare page
